@@ -35,7 +35,8 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero">
+<!--
+  <div *ngIf="selectedHero">
     <H2> {{selectedHero.name | uppercase}} Details</H2>
     <div><span>id: </span>{{selectedHero.id}}</div>
     <div>
@@ -44,6 +45,10 @@
       </label>
     </div>
 </div>
+-->
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
 
 
 
